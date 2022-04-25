@@ -1,0 +1,10 @@
+{:paths ["src/clj"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.11.1"}
+  metosin/malli {:mvn/version "0.8.4"}}
+ :aliases
+ {:run {:main-opts ["-m" "a04.core"]}
+  :repl {:extra-deps {nrepl/nrepl {:mvn/version "0.9.0"}}
+         :main-opts ["-m" "nrepl.cmdline"
+                     "--port" "54320"
+                     "-i"]}}}
